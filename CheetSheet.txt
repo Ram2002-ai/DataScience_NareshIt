@@ -1,0 +1,141 @@
+**1/2/2026	Demo session-1**
+
+|"we discussed about course title or course name,
+| what is mean by full stack ( backend+frontend) 
+| shared course content 
+what are main topic coverd under the course 
+| who can join this course
+shared qr code to join the whatsapp community chanell 
+| course duration and fees & enrollment proces
+| what would be salary for fresher, experience
+| discussed question & answer 
+|what system configuration required Multiple job opening you can applied after learning this course
+|we talked about ai mock tools for interview
+| AI Knowledge graph"
+
+
+**1/3/2026	Demo session-2	**
+
+"about placement -- 40 min 
+roadmap for 5-6 months
+| project ( live or capstone)  -- domain always live 
+BFSI -- banking, fiannce, service, insurance cerfificaiton you will get after compelte the course  lot of student had query 
+| we discussed on them college session 
+| real time working profession session online & offline please try to thing that you comring organization "
+
+
+1/5/2026	Partial demo + classes	
+
+"work with python numbers == integer  
+introduce google colab 
+| ide -- integrated development environement user can write the code, get the bug & fix the bugs 
+compile time error - the error happen user side ( syntax error) 
+bodmas rule
+| arithmetic operator python has name name is called (variable = object = identifier)syntax ( variable = value) value as datatypes "
+ 
+1/6/2026	pyton intoduction
+
+"python - backend, frotend, scripting, cloud integration, db, scripting, everywhere
+python is object oriented programing 
+| dynamic ( it can datatype automatcally ) 
+platform independent
+| python has bunch of library
+|data analysis | ml library | gen ai library | agentic ai library
+
+Rules to define python variable -- does not start with digit 
+no special character is allowed except underscore 
+case sensitive , keywords can never be variable | 35 keywords 
+when you guyes learned all the 35 keyword python si completed 
+keyword also called reserved word 
+python varianbce completed | yesterday i saw fresher offer "
+
+
+1/7/2026	Python datatypes 
+
+"function ends with () , function without argument & function with argument 
+argument === parameter 
+| type() -- give which dtatype 
+| id() - address of the memory lcoation for the variable 
+print() -- print the statement
+| when you wanted to multiple line print() 
+|type error 
+| introduce to datatypes -- int, float, string, bool, complex 
+int -- value without decimal is called int 
+float -- value with decimal is called float | in float it accept only e letter 
+e or E -- both are allowed | e0 -- 1.0 | e1 - 10.0 | e2 - 100.00 
+bool - True or False | must be wrte T or F  "
+
+
+1/8/2026	python datatypes & ollama introduction	
+
+"complex -- complex we use very less in entire ml, ai, gen ai. 
+One of the datatype where we will be using in math application 
+complex format - 1 + 2j (1 - real part, 2 is called imaginary j is called squre root of -1 )
+string -- '' "" "" & ''' ''' ' & "" "" we wil be used for single line comments 
+'' ''' - multiline comments | we list of llm model 
+chatgpt - open ai , gemma -- gemini, deepseek - deepseek | llama - meta
+claude - antropic | grok - xai 
+chatgpt -- we write chatgpt.com website to get information 
+we build own custom llm using ollama frame work "
+
+
+1/9/2026	Pyhton operator 
+"basic operator we are completed
+arithmetic, assgnment, logical, unary, relational 
+print() - without arg, with arg () multiple parameer we can pass 
+one more time about ollama model 
+cmd prompt -- do not install more then 2 model or else system will hand 
+deep seek model 4gb 
+| system will hang 
+another student got place offer direnctly linkedin
+print() with format strint | f string method"
+
+
+1/10/2026	basic python 
+"advanced string | help() -- prompt will appear to exit the prompt - quit
+string question we solved 
+string indexing 
+| python indexing counts from 0 
+python indexing 2 part -- forward indexing & backward indexing 
+forward indexing begins with 0 
+backward indexing begins with -1 "
+
+
+1/12/2026	string indexing 	
+"python index begins with 0 | left to right | backward indexing right to left 
+step indexing 
+| more on datastructure 
+scaler -- number | vector -- collection of scaler 
+array -- collection of vectors | tensor -- collection of arrays
+package vs module vs function 
+structure data = supervised learning = labeld data ( technologgy which deals with structure data -- machine leanring )
+unstrcuture data = unsupervised learning ( tech which deal with unstrcuture data -- AI 
+reinforcemnt ( model can interaact with environment) generative ai & agentic ai "
+
+
+1/19/2026	python data structure
+
+-- List 	"datatype -- user define only one value 
+datastructure -- user define more then one value 
+ds using c | ds using java | ds using python -- ds using python is easyer then anything else 
+list == [], append() copy(), remove() pop() -- index wise elimination 
+insert(), extend(), insert() -- pass 2 argument 
+workin on list "
+
+
+1/20/2026	List & Tuple 
+
+"list indexing, slicing 
+forward indexing, backward indexing, forward slicing, backward slicing, step slicing
+sort() apply only when you pass same dataype 
+if you declare different datatypes then sort will wont work 
+reverse() 
+parameter ==system given own parameter 
+user change systems parameter is called hyperparameter 
+() 
+| list -- [] | tuple has only 2 function ( index & count)
+list is mutable & tuple is immutable | list membership 
+enumerate - gives pair items of the list "
+
+
+1/21/2026	Set 	
