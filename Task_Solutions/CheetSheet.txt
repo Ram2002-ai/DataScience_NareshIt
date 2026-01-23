@@ -139,3 +139,5 @@ enumerate - gives pair items of the list "
 
 
 1/21/2026	Set 	
+indexing & slicing not allowed
+add() will work :- add the element in sets
