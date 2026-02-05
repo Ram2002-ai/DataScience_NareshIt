@@ -10,3 +10,4 @@
 # Python cache
 __pycache__/
 *.pyc
+python_libraries/data_set/rating.csv
