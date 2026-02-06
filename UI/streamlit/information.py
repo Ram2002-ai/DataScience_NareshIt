@@ -10,7 +10,7 @@ st.write("This is a simple app to demonstrate the basic functionalities of Strea
 st.sidebar.header("User Input Features")
 
 # Text Input
-user_name = st.sidebar.text_input("What is your name?", "Prakash senapati")
+user_name = st.sidebar.text_input("What is your name?", "Ram Sevaiwar")
 
 # Slider
 age = st.sidebar.slider("Select your age", 0, 100, 25)
