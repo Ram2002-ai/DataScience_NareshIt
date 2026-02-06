@@ -12,3 +12,4 @@ __pycache__/
 *.pyc
 python_libraries/data_set/rating.csv
 dataset/
+.run/
