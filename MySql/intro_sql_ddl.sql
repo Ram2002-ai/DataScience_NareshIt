@@ -31,3 +31,50 @@ select * from student order by mark; -- asc by default
 select*from student order by mark desc; -- desc change manually
 -- 44,45,46.....69
 
+use nit;
+
+select*from student;
+
+-- wildcard operators 
+/* two wild operator
+(%)
+(_)
+must start with like*/
+
+select*from student where name like 'a%'; -- start with
+select*from student where name like 'y%';
+-- second char is a
+select*from student where name like '_a%';
+select*from student where name like '%s_';
+
+-- 128 page ,129,
+
+-- Joins
+/*joins always work with two tables
+- left join (left outer  join)
+
+
+*/
+
+create table emp(id int not null primary key,salary int,empcode int,name varchar(30));
+
+insert into emp values(12,20000,102,'aman'),(23,60000,104,'arup'),(78,36000,165,'max'),(80,25000,103,'ram'),(34,90000,106,'sam');
+select*from emp;
+select*from student;
+
+--  inner join
+select*from student inner join emp on student.id=emp.id;
+-- left join
+select*from student left join emp on student.id=emp.id;-- left table all record return
+
+select*from emp left join student on emp.id=student.id;
+
+-- right join
+select*from student right join emp on student.id=emp.id;
+select*from emp right join student on emp.id=student.id;
+
+-- cross join
+select * from student cross join emp;
+-- 91-120,128-129
+
+
