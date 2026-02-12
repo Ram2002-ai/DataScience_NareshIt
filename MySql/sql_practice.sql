@@ -331,3 +331,127 @@ SELECT C.ID,C.NAME,C.AGE,O.AMOUNT FROM CUSTOMERS AS C, ORDERS AS O WHERE C.ID=O.
 
 -- COLUMN ALIAS
 select ID AS CUSTOMER_ID,NAME AS CUSTOMER_NAME FROM CUSTOMERS WHERE SALARY IS NOT NULL;
+
+use nit;
+
+
+
+-- SQL INDEXES
+/*I ndexes are special lookup tables that the database search engine can use to speed up data retrieval.*/
+
+select*from CUSTOMERS;
+
+DROP index INDEX_1;
+create index INDEX_1 ON CUSTOMERS (ID);
+
+create index INDEX_2 ON CUSTOMERS(ID,NAME);
+
+
+
+-- SQL ALTER table COMMANDS
+/*The SQL ALTER TABLE command is used to add, delete or modify columns in an existing table.*/
+select*FROM ORDERS;
+
+
+
+-- alter table
+-- ADD FIELDS
+alter table ORDERS ADD PRODUCTS varchar(50);
+
+-- DROP FIELDS
+alter table ORDERS DROP PRODUCTS ;
+
+-- change DATA TYPE
+alter table ORDERS modify CUSTOMER_ID INT;
+desc ORDERS;
+
+
+
+-- NOT NULL
+alter table ORDERS MODIFY OID INT not NULL; 
+
+-- ADD UNIQUE CONSTRANT
+alter table ORDERS add constraint MYUNIQUECONSTRAINT unique(OID);
+
+-- ADD CHECK CONSTRAINT
+alter TABLE ORDERS ADD constraint MYUNIQUECONSTRAINT1 CHECK(AMOUNT>500) ;-- ITS SHOWS ERROR 3819 IF CONDITION IS NOT SATIFY
+
+-- ADD PRIMARY KEY
+alter table ORDERS ADD constraint MYPRIMARYKEY primary key (CUSTOMER_ID);-- ERROR 1068 FOR MULTIPLE PRIAMRY KEY
+
+alter table CUSTOMERS ADD SEX CHAR(1);
+SELECT*FROM CUSTOMERS;
+
+update CUSTOMERS SET  SEX='M' WHERE ID=1;
+alter TABLE CUSTOMERS DROP SEX;
+
+
+
+-- SQL truncate table
+/*The SQL TRUNCATE TABLE command is used to delete complete data from an existing table.
+SYNTAX:
+truncate table table_NAME*/
+
+
+-- SQL USING VIEW
+/* A 
+view is actually a composition of a table in the form of a predefined SQL query.
+SYNTAX:
+CREATE VIEW view_name AS 
+SELECT column1, column2..... 
+FROM table_name 
+WHERE [condition];
+
+- VIEW JUST A EXTRACTING HUGE DATA INTO SMALLER PART TO SEE AND WE CAN APPLY SOME FUNCTION LIKE update,INSERT,DELETE */
+
+create VIEW CUST AS SELECT NAME,AGE FROM CUSTOMERS;
+SELECT*FROM CUST;
+
+
+-- UPDATE VIEW
+SET SQL_SAFE_UPDATES = 0;-- I AM USING SQL SAFE UPDATE VERSION THATS WHY I NEED TO CHANGE
+update CUST VIEW set AGE=35 WHERE NAME='RAMESH';
+SET SQL_SAFE_UPDATES = 1;
+ 
+ -- DELETE THE RECORDS
+delete from CUST VIEW WHERE AGE=22;
+
+-- DELETE THE VIEW
+drop VIEW CUST;
+SELECT * FROM CUST;-- SQL SHOWS 1146 ERROR IF DATA IS NOT EXISTS
+
+
+
+-- SQL WILDCARD OPERATIONS
+/*We already have discussed SQL LIKE operator, which is used to compare a value to similar values 
+using wildcard operators.
+TWO WILDCARD EXISTS
+1.(%)-> Matches one or more characters. 
+2.(_)->Matches one character. 
+Syntax: 
+The basic syntax of ‘%’ and ‘_’ is as follows: 
+SELECT FROM table_name 
+WHERE column LIKE 'XXXX%' 
+ 
+or  
+ 
+SELECT FROM table_name 
+WHERE column LIKE '%XXXX%' 
+ 
+or 
+ 
+SELECT FROM table_name 
+WHERE column LIKE 'XXXX_' 
+ 
+or 
+ 
+SELECT FROM table_name 
+WHERE column LIKE '_XXXX' 
+ */
+
+select*FROM CUSTOMERS WHERE SALARY LIKE '200%';-- CHECKS THE STARTING THREE VALUES IF MATCH THEN RETURN THE values
+select*FROM CUSTOMERS WHERE NAME LIKE '_a%';
+select*from customers where name like'%i_';
+select*from customers where salary like '_0%';
+
+
