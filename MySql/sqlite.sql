@@ -80,3 +80,5 @@ SELECT DISTINCT TEMPERATURE FROM dataset_1 d WHERE d.temperature BETWEEN 29 AND 
 -- IN
 SELECT OCCUPATION FROM dataset_1 d WHERE d.occupation IN('Sales & Related','Management');
 
+SELECT *from table_to_join ttj ;
+SELECT *from 
