@@ -1,4 +1,4 @@
-select *from dataset_1;
+create table emp(empid not null int primary key,name varchar(30));
 SELECT weather,temperature from dataset_1;
 select*from dataset_1 limit 10;
 select DISTINCT (passanger)from dataset_1 d ;
