@@ -57,7 +57,14 @@ if plot:
 state_df = df[df["State"] == selected_state]
 
 if state_df.empty:
-    st.warning(f"No data available for {selected_state}.")
+    if selected_state=='Overall India':
+        # plot for india
+
+        fig=px.density_map(df,lat='Latitude',lon='Longitude',z=primary,radius=25,zoom=4,
+                             map_style="carto-darkmatter" ,width=1200,height=700,hover_name='District',center={"lat": 22.5, "lon": 79.0})
+        
+        st.plotly_chart(fig,use_container_width=True)
+
 else:
     fig = px.density_map(
         state_df,
@@ -79,7 +86,12 @@ else:
 state_df = df[df["State"] == selected_state]
 
 if state_df.empty:
-    st.warning(f"No data available for {selected_state}.")
+    
+        fig=px.density_map(df,lat='Latitude',lon='Longitude',z=primary,radius=25,zoom=4,
+                             map_style="carto-darkmatter" ,width=1200,height=700,hover_name='District',center={"lat": 22.5, "lon": 79.0})
+        
+        st.plotly_chart(fig,use_container_width=True,key='india')
+
 else:
     fig = px.density_map(
         state_df,
