@@ -13,3 +13,5 @@ __pycache__/
 python_libraries/data_set/rating.csv
 dataset/
 .run/
+.gitattributes/
+.gitignore/

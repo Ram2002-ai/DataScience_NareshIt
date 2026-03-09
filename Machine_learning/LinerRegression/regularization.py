@@ -14,7 +14,7 @@ from sklearn.metrics import r2_score
 
 df=pd.read_csv(r"E:\data\data_set\car-mpg.csv")
 
-df = df.drop('car_name',axis=1)
+df = df.
 
 df['origin']=df['origin'].replace({1:'america',2:'europe',3:'asia'})
 
