@@ -21,4 +21,40 @@ knn.fit(X,y)
 
 knn_pred=knn.predict([[6.5]])
 
-knn_score=knn.
+# Decision Tree
+from sklearn.tree import DecisionTreeRegressor
+dt_reg=DecisionTreeRegressor(criterion="poisson",splitter='best',min_samples_split=3)
+
+dt_reg.fit(X,y)
+
+dt_pred=dt_reg.predict([[6.5]])
+
+# Random forest
+from sklearn.ensemble import RandomForestRegressor
+rf_reg=RandomForestRegressor(random_state=0,n_estimators=200,max_depth=10,
+                             min_samples_leaf=2,min_samples_split=5)
+rf_reg.fit(X,y)
+
+rf_pred=rf_reg.predict([[6.5]])
+
+
+## Feature Scalling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
