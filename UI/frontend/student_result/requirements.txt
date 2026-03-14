@@ -1,0 +1,26 @@
+# Core Database Driver
+pyodbc==5.0.1
+
+# Image Processing
+Pillow==10.1.0
+
+# Excel File Handling
+openpyxl==3.1.2
+
+# PDF Generation
+reportlab==4.1.0
+
+# Data Visualization
+matplotlib==3.8.2
+
+# Password Hashing (Optional - if you want to implement in future)
+bcrypt==4.0.1
+
+# Date Handling
+python-dateutil==2.8.2
+
+# Data Export/Import
+pandas==2.1.4
+
+# For CSV handling (built-in but listed for completeness)
+# No additional package needed - uses Python's built-in csv module
