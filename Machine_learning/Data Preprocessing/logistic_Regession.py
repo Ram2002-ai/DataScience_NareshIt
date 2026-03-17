@@ -2,21 +2,23 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("E:\logit classification.csv")
+df=pd.read_csv(r"E:\data\data_set\logit classification.csv")
 
 X=df.iloc[:,[2,3]].values
 y=df.iloc[:,-1].values
 
 
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=100)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0)
 
-
-
+from sklearn.preprocessing import StandardScaler
+sc=StandardScaler()
+X_train=sc.fit_transform(X_train)
+X_test=sc.transform(X_test)
 
 from sklearn.linear_model import LogisticRegression
 
-lr=LogisticRegression(penalty='l1',solver='liblinear')
+lr=LogisticRegression()
 lr.fit(X_train, y_train)
 
 
@@ -41,10 +43,14 @@ bias=lr.score(X_train,y_train)
 variance=lr.score(X_test, y_test)
 
 
+# future prediction
 
+df1=pd.read_csv("E:\data\data_set\Future prediction1.csv")
 
+df1=df.iloc[:,[2,3]].values
 
-
+df2=df1.copy
+sc.fit_transform(df1)
 
 
 
