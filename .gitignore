@@ -1,5 +1,5 @@
 # Virtual environment
-.venv/
+env/
 
 # PyCharm
 .idea/
@@ -15,3 +15,8 @@ dataset/
 .run/
 .gitattributes/
 .gitignore/
+
+.ipynb_checkpoints
+.vscode
+.gitattibutes
+app.py.py
