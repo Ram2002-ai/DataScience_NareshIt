@@ -4,19 +4,26 @@ env/
 # PyCharm
 .idea/
 
+# VS Code
+.vscode/
+
 # Jupyter
 .ipynb_checkpoints/
 
 # Python cache
 __pycache__/
 *.pyc
-python_libraries/data_set/rating.csv
-dataset/
-.run/
-.gitattributes/
-.gitignore/
 
-.ipynb_checkpoints
-.vscode
-.gitattibutes
+# Dataset
+dataset/
+python_libraries/data_set/rating.csv
+
+# Run configs
+.run/
+
+# Git files (usually NOT needed to ignore)
+# .gitattributes   ❌ remove this line
+# .gitignore       ❌ remove this line
+
+# Specific file
 app.py.py
