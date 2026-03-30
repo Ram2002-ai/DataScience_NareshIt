@@ -14,7 +14,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 from sklearn.tree import DecisionTreeClassifier
 
-dt=DecisionTreeClassifier(criterion='entropy',max_depth=10,random_state=0,class_weight={0: 1, 1: 1})
+dt=DecisionTreeClassifier(criterion='entropy',max_depth=2,random_state=0,class_weight={0: 1, 1: 1})
 
 dt.fit(X_train,y_train)
 
@@ -24,4 +24,7 @@ from sklearn.metrics import accuracy_score,confusion_matrix
 
 ac=accuracy_score(y_test, y_pred)
 confusion=confusion_matrix(y_test, y_pred)
+
+
+
 
