@@ -1,0 +1,6 @@
+/mlartifacts/
+/mlflow.db
+/NLP/node_modules/
+**/.ipynb_checkpoints/
+/Machine_learning/Classification/Ensemble-Learning/Random_Forest/data/EMNIST/raw/
+*.zip
