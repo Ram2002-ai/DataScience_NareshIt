@@ -1,6 +1,0 @@
-streamlit
-opencv-python
-numpy
-pandas
-Pillow
-streamlit-image-coordinates
