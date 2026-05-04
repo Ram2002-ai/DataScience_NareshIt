@@ -19,8 +19,14 @@ st.title("🎨 Color Detection System")
 # =========================
 # 📂 LOAD COLOR DATASET
 # =========================
+import os
+
 index = ["color", "color_name", "hex", "R", "G", "B"]
-csv = pd.read_csv(r"colors.csv", names=index, header=None)
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIR, "colors.csv")
+
+csv = pd.read_csv(csv_path, names=index, header=None)
 
 # =========================
 # 🎯 COLOR NAME
