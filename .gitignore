@@ -11,7 +11,7 @@ runs/
 DEEPLEARNING/open-cv/ram_image.jpg
 
 # Entire folder (if you want to ignore it)
-DEEPLEARNING/open-cv/COLOR DETECTION PROJECT/
+# DEEPLEARNING/open-cv/COLOR DETECTION PROJECT/
 
 # Python env
 env/
