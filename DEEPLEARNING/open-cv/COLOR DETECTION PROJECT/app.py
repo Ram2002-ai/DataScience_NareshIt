@@ -292,4 +292,4 @@ def main():
         camera_mode(low, high)
 
 if __name__ == "__main__":
-    main()
+    main(),
