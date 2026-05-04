@@ -4,3 +4,18 @@
 **/.ipynb_checkpoints/
 /Machine_learning/Classification/Ensemble-Learning/Random_Forest/data/EMNIST/raw/
 *.zip
+# YOLO output folders
+runs/
+
+# Color detection project images (if needed)
+DEEPLEARNING/open-cv/ram_image.jpg
+
+# Entire folder (if you want to ignore it)
+DEEPLEARNING/open-cv/COLOR DETECTION PROJECT/
+
+# Python env
+env/
+
+# Cache files
+__pycache__/
+*.pyc
