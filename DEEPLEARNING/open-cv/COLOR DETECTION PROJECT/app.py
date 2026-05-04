@@ -20,7 +20,7 @@ st.title("🎨 Color Detection System")
 # 📂 LOAD COLOR DATASET
 # =========================
 index = ["color", "color_name", "hex", "R", "G", "B"]
-csv = pd.read_csv(r"C:\Users\USER\DataScience_NareshIt\DEEPLEARNING\open-cv\COLOR DETECTION PROJECT\colors.csv", names=index, header=None)
+csv = pd.read_csv(r"colors.csv", names=index, header=None)
 
 # =========================
 # 🎯 COLOR NAME
