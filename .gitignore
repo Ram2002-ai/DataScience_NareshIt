@@ -19,3 +19,13 @@ env/
 # Cache files
 __pycache__/
 *.pyc
+
+
+
+
+
+venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
