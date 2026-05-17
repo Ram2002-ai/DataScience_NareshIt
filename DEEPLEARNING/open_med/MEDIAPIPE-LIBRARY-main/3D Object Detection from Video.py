@@ -10,7 +10,7 @@ mp_objectron = mp.solutions.objectron
 mp_drawing = mp.solutions.drawing_utils
 
 
-cap = cv2.VideoCapture(r"C:\Users\A3MAX SOFTWARE TECH\Desktop\WORK\2. DATASCIENCE PROJECT\29. Mediapipe\pexels_videos.mp4")
+cap = cv2.VideoCapture(r"E:\Photos\vidssave.com Watch India in 4K _ One-Minute Cinematic Travel Video _ India Places to Visit 480P.mp4")
 
 objectron = mp_objectron.Objectron(static_image_mode=False,
                                    max_num_objects=5,
