@@ -19,9 +19,10 @@ def url_to_array(url):
     arr = cv2.cvtColor(arr, cv2.COLOR_BGR2RGB)
     return arr
 
-mug = 'https://goodstock.photos/wp-content/uploads/2018/01/Laptop-Coffee-Mug-on-Table.jpg'
-mug = url_to_array(mug)
+# mug = 'https://goodstock.photos/wp-content/uploads/2018/01/Laptop-Coffee-Mug-on-Table.jpg'
+# mug = url_to_array(mug)
 
+mug=cv2.imread("E:\cup.jpg")
 # ------> LETS INSTANTIATE AN OBJECTRON INSTANCE AND PROCESS() INPUT FUNCTION
 
 objectron = mp_objectron.Objectron(

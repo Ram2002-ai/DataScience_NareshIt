@@ -11,9 +11,9 @@ detector = mp_pose.Pose(
     model_complexity=2,
     enable_segmentation=True)
 
-# Step 2: Load the input image.
-image = cv2.imread(r"C:\Users\A3MAX SOFTWARE TECH\Desktop\WORK\2. DATASCIENCE PROJECT\29. Mediapipe\img2.jpeg")
-
+# # Step 2: Load the input image.
+# image = cv2.imread(r"C:\Users\A3MAX SOFTWARE TECH\Desktop\WORK\2. DATASCIENCE PROJECT\29. Mediapipe\img2.jpeg")
+image=cv2.imread(r"E:\Photos\ram.jpg")
 # Step 3: Convert the image to RGB format and process it.
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 results = detector.process(image_rgb)
