@@ -6,7 +6,7 @@
 *.zip
 # YOLO output folders
 runs/
-
+.env
 # Color detection project images (if needed)
 DEEPLEARNING/open-cv/ram_image.jpg
 
